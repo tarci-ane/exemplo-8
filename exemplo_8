@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+    
+      int x[10] = { 20, 30, 45, 67, 5, 49, 34, 21, 99, 89 };
+
+    
+      int y[] = { 34, 7, 44 };
+
+     
+      int z[3];
+
+     
+       z[0] = 200;
+       z[1] = 400;
+       z[2] = 500;
+
+    
+      char s[] = {'b','i','a','\0'};
+
+      
+      char t[] = "bia";
+
+      printf("Primeiro elemento do vetor x: %d \n", x[0]);
+      printf("Segundo elemento do vetor y: %d \n", y[1]);
+      printf("Terceiro elemento do vetor s: %c \n", s[2]);
+
+      printf("Todos os 10 elementos do vetor x: \n");
+      int i;
+      for(i=0; i < 10; i++)
+            printf("%d ", x[i]);
+
+      
+      printf("\nTodos os elementos do vetor s: %s \n", s);
+      printf("Todos os elementos do vetor t: %s \n", t);
+
+    
+      char apelido[MAX_NOME];
+      printf("Digite um nome (sem espacos): ");
+      scanf("%s", apelido);
+      printf("Nome digitado: %s \n", apelido);
+
+     
+      char nomeCompleto[MAX_NOME];
+      printf("Digite um nome (pode conter espacos): ");
+      fflush(stdin); gets(nomeCompleto);
+      printf("Nome digitado: %s", nomeCompleto);
+
+      printf("\n\n\n"); system("pause"); 
+      
+      return 0;
+}
